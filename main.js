@@ -162,7 +162,7 @@ function displayReceipt() {
 
     cart.forEach((item) => {
         const receiptItem = document.createElement("div");
-        receiptItem.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+        receiptItem.textContent = `${item.name} - ₱${item.price.toFixed(2)}`;
         receiptItems.appendChild(receiptItem);
         total += item.price;
     });
